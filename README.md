@@ -1,3 +1,4 @@
 # YouTube-Upload-AI
 Tecnologies: React, Typescript, Shadcn UI(RadixUI + Tailwindcss), Node, Web Assembly, Prisma ORM
-![image](https://github.com/alisondiegodev/YouTube-Upload-AI/assets/110138219/7f7792eb-c2bb-4740-8cf3-6e15417c9038)
+![image](https://github.com/alisondiegodev/YouTube-Upload-AI/assets/110138219/0c9eb969-9f5b-463a-8b94-0c9159b0da91)
+
