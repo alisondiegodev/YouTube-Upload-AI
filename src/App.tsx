@@ -1,9 +1,9 @@
 import { Button } from "./components/ui/button";
-import { Github, Upload, Wand2 } from "lucide-react";
+import { Github, Wand2 } from "lucide-react";
 import { Separator } from "./components/ui/separator";
 import { Textarea } from "./components/ui/textarea";
-import { FileVideo } from "@phosphor-icons/react";
 import { Label } from "./components/ui/label";
+
 import {
   Select,
   SelectContent,
@@ -13,6 +13,7 @@ import {
   SelectValue,
 } from "./components/ui/select";
 import { Slider } from "./components/ui/slider";
+import VideoInputForm from "./components/ui/video-input-form";
 
 export function App() {
   return (
@@ -50,39 +51,7 @@ export function App() {
         </div>
 
         <aside className="w-80 space-y-6">
-          <form action="" className="space-y-6">
-            <label
-              className="border flex rounded-md aspect-video cursor-pointer border-dashed text-sm flex-col gap-2 items-center justify-center text-muted-foreground hover:bg-gray-900 "
-              htmlFor="video"
-            >
-              <FileVideo className="h-8 w-8" />
-              Selecione um video
-            </label>
-            <input
-              type="file"
-              name="video"
-              id="video"
-              accept="video/mp4"
-              className="sr-only"
-            />
-
-            <Separator />
-
-            <div className="space-y-2">
-              <Label htmlFor="transcription_prompt">
-                Prompt de transcrição
-              </Label>
-              <Textarea
-                id="transcription_prompt"
-                className="h-20 resize-none leading-relaxed"
-                placeholder="Inclua palavras-chave mencionadas no vídeo separadas por virgula (,)"
-              />
-            </div>
-            <Button type="submit" className="w-full">
-              Carregar Vídeo <Upload className="ml-2 w-4" />
-            </Button>
-          </form>
-
+          <VideoInputForm />
           <Separator />
 
           <form action="" className="space-y-6">
